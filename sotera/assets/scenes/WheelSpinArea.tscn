@@ -1,25 +1,14 @@
 [gd_scene format=3 uid="uid://bbqcbyvycwqrr"]
 
-[ext_resource type="Texture2D" uid="uid://b3ilycodn6qim" path="res://assets/images/image2.png" id="1_kjr7i"]
-[ext_resource type="Texture2D" uid="uid://bd5w15rasedea" path="res://assets/images/image.png" id="2_cdcth"]
-[ext_resource type="Texture2D" uid="uid://blfbq8ov06026" path="res://assets/images/Screenshot_2026-06-20_141033.png" id="3_cdcth"]
+[ext_resource type="Texture2D" uid="uid://wxv0vjpmmhpj" path="res://assets/images/TestImage.png" id="1_lmcl5"]
 [ext_resource type="PackedScene" uid="uid://hubowr5basua" path="res://assets/prefabs/WheelSpin.tscn" id="4_3wgd6"]
 
 [node name="Root" type="Node2D" unique_id=953526698]
 
-[node name="Image2" type="Sprite2D" parent="." unique_id=848331994]
-position = Vector2(951, 548)
-scale = Vector2(1.769168, 1.769168)
-texture = ExtResource("1_kjr7i")
-
-[node name="Image" type="Sprite2D" parent="." unique_id=904063296]
-position = Vector2(1149.0001, 578.00006)
-scale = Vector2(0.57321566, 0.57321566)
-texture = ExtResource("2_cdcth")
-
-[node name="Screenshot20260620141033" type="Sprite2D" parent="." unique_id=163553277]
-position = Vector2(901, 1494)
-texture = ExtResource("3_cdcth")
+[node name="TestImage" type="Sprite2D" parent="." unique_id=1293281652]
+position = Vector2(945, 534)
+scale = Vector2(1.3463243, 1.3463244)
+texture = ExtResource("1_lmcl5")
 
 [node name="WheelSpin" parent="." unique_id=1465385523 instance=ExtResource("4_3wgd6")]
 position = Vector2(948, 544)
