@@ -14,6 +14,7 @@ colors = PackedColorArray(1.347661e-06, 0.87553775, 0.8064471, 1, 1, 1, 1, 0, 0,
 script = ExtResource("1_5q03y")
 
 [node name="smallPE" type="CPUParticles2D" parent="." unique_id=1044738356]
+emitting = false
 amount = 32
 lifetime = 3.0
 lifetime_randomness = 0.25
@@ -32,6 +33,7 @@ color = Color(1, 0.54376775, 0.4794641, 1)
 color_ramp = SubResource("Gradient_4jsy0")
 
 [node name="bigPE" type="CPUParticles2D" parent="." unique_id=831542250]
+emitting = false
 amount = 16
 lifetime = 4.0
 lifetime_randomness = 0.2

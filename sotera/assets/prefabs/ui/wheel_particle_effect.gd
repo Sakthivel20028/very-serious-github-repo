@@ -42,12 +42,17 @@ func _process(delta: float) -> void:
 			state = WheelPEState.NORMAL_MODE
 			speed = normal_speed
 			update_speed(speed, velocity_diff_multiplier)
+			$bigPE.emitting = false
+			$smallPE.emitting = false
 
 func start_speedup():
 	current_speed = speed
 	state = WheelPEState.SPEED_UP_TRANSITION
 	transition_time = RandUtils.randf_range(min_transition_time, max_transition_time)
 	elapsed_time = 0.0
+	
+	$bigPE.emitting = true
+	$smallPE.emitting = true
 
 func start_slowdown():
 	current_speed = speed
