@@ -79,8 +79,9 @@ func isDisabled() -> bool:
 	
 func destroy()->void:
 	state = BHENEMYSTATE.DISABLED
-	position = spawnPos
 	emit_signal("enemyKilled",self)
+	position = spawnPos
+	
 	$Animation.hide()
 
 func _on_attack_hitbox_body_entered(body: Node2D) -> void:
