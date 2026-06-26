@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://c6efpemuy42tc" path="res://assets/raw/wheel-scene/fortune_wheel/wheel_icon_bullets.png" id="14_4tcif"]
 [ext_resource type="Texture2D" uid="uid://cllxxawp4bkrl" path="res://assets/raw/wheel-scene/fortune_wheel/wheel_icon_quiz.png" id="15_0wqvk"]
 [ext_resource type="Texture2D" uid="uid://do1jnfte64gyp" path="res://assets/raw/wheel-scene/fortune_wheel/wheel_icon_scary.png" id="16_83ar3"]
+[ext_resource type="PackedScene" uid="uid://bl5kwk28ennhq" path="res://assets/prefabs/ui/dialogue_text.tscn" id="17_6vnka"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_t6tgv"]
 distance = 3.9999962
@@ -106,5 +107,11 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 18.0
 label_settings = SubResource("LabelSettings_1vda6")
+
+[node name="DialogueText" parent="." unique_id=998366939 instance=ExtResource("17_6vnka")]
+offset_left = 320.0
+offset_top = 351.0
+offset_right = -1429.3333
+offset_bottom = -633.0
 
 [connection signal="lever_pulled" from="Lever" to="Wheel" method="_on_lever_lever_pulled"]
