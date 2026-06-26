@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b0nefrx30bpt0"]
 
+[ext_resource type="Script" uid="uid://dbfp34df5axm1" path="res://src/scripts/bullet_hell_minigame.gd" id="1_jk4tv"]
 [ext_resource type="Script" uid="uid://bxvm1qmxyc60c" path="res://src/scripts/BulletHellGame/BulletHellEnemySpawner.gd" id="2_k22da"]
 [ext_resource type="PackedScene" uid="uid://djlcsqi5rdk0t" path="res://assets/prefabs/BulletHellGame/BulletHellEnemy.tscn" id="3_1tnea"]
 [ext_resource type="PackedScene" uid="uid://qxxqamx1koeu" path="res://assets/prefabs/ui/CRT.tscn" id="4_g2uak"]
@@ -105,6 +106,7 @@ radius = 21.0
 height = 90.0
 
 [node name="BulletHellMinigame" type="Node2D" unique_id=605887518]
+script = ExtResource("1_jk4tv")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=2056125960]
 visible = false
