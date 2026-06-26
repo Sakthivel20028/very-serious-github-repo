@@ -12,7 +12,6 @@ func take_damage():
 	if Lives == 0:
 		SoundPool.play_sound(SoundPool.MINIGAME_FAIL)
 		Events.change_level("res://assets/scenes/FortuneWheelScene.tscn")
-		pass
 
 func increment_contracts():
 	Total_contracts += 1
